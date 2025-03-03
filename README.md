@@ -11,3 +11,18 @@
 - Управление моделями через Django Admin.
 - Бонус: запуск через Docker и использование переменных окружения для настроек Stripe.
 
+## Запуск проекта
+1 - Клонируйте репозиторий
+
+2 - Создайте виртуальное окружение
+python -m venv venv
+venv\Scripts\activate
+
+3 - Установите зависимости
+pip install -r requirements.txt
+
+4 - Создайте .env файл с:
+STRIPE_S_KEY и STRIPE_P_KEY
+
+5 - Запустите сборку и контейнеры:
+docker-compose up --build
